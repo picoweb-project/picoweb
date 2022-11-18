@@ -10,19 +10,13 @@ function createElement(type, props, children) {
 	if (typeof type == "string") {
 		element = document.createElement(type);
 		Object.assign(element, _props);
-		
-		if (typeof children != "undefined") {
-			for (let i = 0; i < children.length; i++) {
-				element.appendChild(children[i]);
-			}
-		}
 	} else {
 		element = type(_props);
-		
-		if (typeof children != "undefined") {
-			for (let i = 0; i < children.length; i++) {
-				element.appendChild(children[i]);
-			}
+	}
+	
+	if (typeof children != "undefined") {
+		for (let i = 0; i < children.length; i++) {
+			element.appendChild(children[i]);
 		}
 	}
 	
