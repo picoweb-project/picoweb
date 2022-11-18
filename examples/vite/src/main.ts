@@ -1,5 +1,7 @@
 // @ts-ignore
-import { createElement, render, createState } from '@picoweb/picoweb';
+import { createElement, render } from '@picoweb/core';
+// @ts-ignore
+import { createState } from '@picoweb/state';
 
 function Counter() {
 	let button = createElement("button");
