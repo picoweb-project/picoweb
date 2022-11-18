@@ -13,6 +13,6 @@
     "vite": "^3.2.0"
   },
   "dependencies": {
-    "picoweb": "file:../../packages/picoweb"
+    "@picoweb/picoweb": "file:../../packages/picoweb"
   }
 }
