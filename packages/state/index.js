@@ -4,7 +4,7 @@ class State extends PubSub {
 	constructor(initialValue) {
 		super();
 		this._value = initialValue;
-		this._eventqueue.push([undefined, initialValue]);
+		this._eventqueue.push([initialValue, undefined]);
 	}
 	
 	get() {
@@ -15,7 +15,7 @@ class State extends PubSub {
 		const oldValue = this._value;
 		this._value = value;
 		
-		this.publish(oldValue, value);
+		this.publish(value, oldValue);
 	}
 	
 	setAsync(callback) {

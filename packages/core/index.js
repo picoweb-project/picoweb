@@ -28,14 +28,14 @@ function createElement(type, props, children) {
 	
 	element.bind = (state, prop, callback) => {
 		if (typeof callback == "undefined") {
-			state.subscribe((oldValue, value) => {
+			state.subscribe((value) => {
 				element[prop] = value;
 			});
 			
 			return;
 		}
 		
-		state.subscribe((oldValue, value) => {
+		state.subscribe((value, oldValue) => {
 			element[prop] = callback(value, oldValue);
 		});
 	}
