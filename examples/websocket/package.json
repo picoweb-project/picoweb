@@ -1,0 +1,21 @@
+{
+  "name": "websocket",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
+  },
+  "dependencies": {
+    "@picoweb/core": "file:../../packages/core",
+    "@picoweb/state": "file:../../packages/state",
+    "@picoweb/websocket": "file:../../packages/websocket",
+    "ws": "^8.11.0"
+  }
+}
