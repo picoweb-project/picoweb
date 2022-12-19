@@ -1,14 +1,15 @@
 {
   "name": "@picoweb/state",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "hexaheximal",
   "license": "MIT",
   "dependencies": {
-    "@picoweb/pubsub": "file:../pubsub"
+    "@picoweb/pubsub": "^0.0.3"
   }
 }
